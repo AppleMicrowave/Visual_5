@@ -29,6 +29,7 @@ ui_*.h
 *.jsc
 Makefile*
 *build-*
+/Text_editor/build/
 *.qm
 *.prl
 
