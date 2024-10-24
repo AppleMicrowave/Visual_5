@@ -15,9 +15,45 @@ void TextManager::search(const QString& searchText, QTextEdit* textEdit) {
        QTextCursor foundCursor = textEdit->document()->find(searchText, cursor);
         if (!foundCursor.isNull()) {
         textEdit->setTextCursor(foundCursor);
-            QMessageBox::information(nullptr, "Результат", "Первое вхождение строки найдено.");
+            QMessageBox::information(nullptr, "Result", "First occurrence of string found.");
        } else {
-            QMessageBox::information(nullptr, "Результат", "Строка не найдена.");
+            QMessageBox::information(nullptr, "Result", "String not found.");
+        }
+       }
+       else {
+           QMessageBox::information(nullptr, "Result", "Search string empty");
+       }
+}
+
+
+void TextManager::replace(const QString& findText, const QString& replaceText, QTextEdit* textEdit) {
+    // if (!findText.isEmpty()) {
+    //     QTextCursor cursor = textEdit->textCursor();
+    //     cursor.movePosition(QTextCursor::Start);
+    //     QTextCursor foundCursor = textEdit->document()->find(findText, cursor);
+    //     if (!foundCursor.isNull()) {
+    //         textEdit->setTextCursor(foundCursor);
+
+    //         QMessageBox::information(nullptr, "Result", "First occurrence of string found.");
+    //     } else {
+    //         QMessageBox::information(nullptr, "Result", "String not found.");
+    //     }
+    // }
+    // else {
+    //     QMessageBox::information(nullptr, "Result", "Search string empty");
+    // }
+
+    QTextCursor cursor = textEdit->textCursor();
+    cursor.setPosition(0); // Начинаем поиск с начала документа
+    while (!cursor.isNull() && !cursor.atEnd()) {
+        cursor = textEdit->document()->find(findText, cursor);
+        if (!cursor.isNull()) {
+            // Выделяем найденный текст
+            cursor.select(QTextCursor::WordUnderCursor);
+            // Заменяем выделенный текст
+            textEdit->setTextCursor(cursor);
+            textEdit->insertPlainText(replaceText);
+        }
     }
-    }
+
 }
