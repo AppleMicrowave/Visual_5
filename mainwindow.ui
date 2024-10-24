@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>803</width>
-    <height>603</height>
+    <width>961</width>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>-1</x>
-      <y>20</y>
-      <width>804</width>
-      <height>530</height>
+      <y>0</y>
+      <width>951</width>
+      <height>501</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -33,9 +33,9 @@
      <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
        <rect>
-        <x>6</x>
-        <y>5</y>
-        <width>789</width>
+        <x>20</x>
+        <y>0</y>
+        <width>931</width>
         <height>480</height>
        </rect>
       </property>
@@ -48,8 +48,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>803</width>
-     <height>25</height>
+     <width>961</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -104,8 +104,8 @@
    </property>
    <property name="iconSize">
     <size>
-     <width>30</width>
-     <height>50</height>
+     <width>52</width>
+     <height>52</height>
     </size>
    </property>
    <attribute name="toolBarArea">
@@ -132,76 +132,130 @@
    <addaction name="actionRemoveRow"/>
   </widget>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/open.png</normaloff>images/open.png</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
   </action>
   <action name="actionCreate">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/create.png</normaloff>images/create.png</iconset>
+   </property>
    <property name="text">
     <string>Create</string>
    </property>
   </action>
   <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/save.png</normaloff>images/save.png</iconset>
+   </property>
    <property name="text">
     <string>Save</string>
    </property>
   </action>
   <action name="actionSearch">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/search.png</normaloff>images/search.png</iconset>
+   </property>
    <property name="text">
     <string>Search</string>
    </property>
   </action>
   <action name="actionReplace">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/replace.png</normaloff>images/replace.png</iconset>
+   </property>
    <property name="text">
     <string>Replace</string>
    </property>
   </action>
   <action name="actionClear">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/clean.png</normaloff>images/clean.png</iconset>
+   </property>
    <property name="text">
     <string>Clear</string>
    </property>
   </action>
   <action name="actionReturn">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/return.png</normaloff>images/return.png</iconset>
+   </property>
    <property name="text">
     <string>Return</string>
    </property>
   </action>
   <action name="actionCopy">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/copy.png</normaloff>images/copy.png</iconset>
+   </property>
    <property name="text">
     <string>Copy</string>
    </property>
   </action>
   <action name="actionPaste">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/paste.png</normaloff>images/paste.png</iconset>
+   </property>
    <property name="text">
     <string>Paste</string>
    </property>
   </action>
   <action name="actionInsert">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditPaste"/>
+   </property>
    <property name="text">
     <string>Insert</string>
    </property>
   </action>
   <action name="actionDecorate">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentProperties"/>
+   </property>
    <property name="text">
     <string>Decorate...</string>
    </property>
   </action>
   <action name="actionAddColumn">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::MediaSkipForward"/>
+   </property>
    <property name="text">
     <string>AC</string>
    </property>
   </action>
   <action name="actionAddRow">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::MediaEject"/>
+   </property>
    <property name="text">
     <string>AR</string>
    </property>
   </action>
   <action name="actionRemoveColumn">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+   </property>
    <property name="text">
     <string>RC</string>
    </property>
   </action>
   <action name="actionRemoveRow">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+   </property>
    <property name="text">
     <string>RR</string>
    </property>

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource lang="Tatarian" prefix="/new/suffix">
+        <file>images/clean.png</file>
+        <file>images/copy.png</file>
+        <file>images/create.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/replace.png</file>
+        <file>images/return.png</file>
+        <file>images/save.png</file>
+        <file>images/search.png</file>
+    </qresource>
+</RCC>
