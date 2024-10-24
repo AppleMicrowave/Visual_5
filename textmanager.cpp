@@ -7,7 +7,6 @@
 
 
 
-
 void TextManager::search(const QString& searchText, QTextEdit* textEdit) {
      if (!searchText.isEmpty()) {
         QTextCursor cursor = textEdit->textCursor();
@@ -27,22 +26,6 @@ void TextManager::search(const QString& searchText, QTextEdit* textEdit) {
 
 
 void TextManager::replace(const QString& findText, const QString& replaceText, QTextEdit* textEdit) {
-    // if (!findText.isEmpty()) {
-    //     QTextCursor cursor = textEdit->textCursor();
-    //     cursor.movePosition(QTextCursor::Start);
-    //     QTextCursor foundCursor = textEdit->document()->find(findText, cursor);
-    //     if (!foundCursor.isNull()) {
-    //         textEdit->setTextCursor(foundCursor);
-
-    //         QMessageBox::information(nullptr, "Result", "First occurrence of string found.");
-    //     } else {
-    //         QMessageBox::information(nullptr, "Result", "String not found.");
-    //     }
-    // }
-    // else {
-    //     QMessageBox::information(nullptr, "Result", "Search string empty");
-    // }
-
     QTextCursor cursor = textEdit->textCursor();
     cursor.setPosition(0); // Начинаем поиск с начала документа
     while (!cursor.isNull() && !cursor.atEnd()) {
@@ -55,5 +38,8 @@ void TextManager::replace(const QString& findText, const QString& replaceText, Q
             textEdit->insertPlainText(replaceText);
         }
     }
+}
 
+void TextManager::clear(QTextEdit* textEdit){
+    textEdit->setText("");
 }
