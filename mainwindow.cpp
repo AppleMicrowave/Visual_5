@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
 }
 
@@ -21,13 +22,12 @@ MainWindow::~MainWindow()
 
 
 
+QString copyText;
 
 void MainWindow::on_actionSearch_triggered()
 {
-    // Получить строку от пользователя
     QString userInput = QInputDialog::getText(nullptr, "Input string", "Enter search string:");
-    TextManager::search(userInput, ui->textEdit);
-
+    TextManager::search( ui->textEdit, userInput);
 }
 
 
@@ -35,7 +35,25 @@ void MainWindow::on_actionReplace_triggered()
 {
     QString userInputFind = QInputDialog::getText(nullptr, "Input string", "Enter search string:");
     QString userInputReplace = QInputDialog::getText(nullptr, "Input string", "Enter replace string:");
-    TextManager::replace(userInputFind, userInputReplace, ui->textEdit);
+    TextManager::replace(ui->textEdit, userInputFind, userInputReplace);
+}
 
+
+void MainWindow::on_actionClear_triggered()
+{
+    TextManager::clear(ui->textEdit);
+}
+
+
+void MainWindow::on_actionCopy_triggered()
+{
+    copyText = TextManager::copy(ui->textEdit);
+}
+
+
+void MainWindow::on_actionPaste_triggered()
+{
+
+    TextManager::paste(ui->textEdit, copyText);
 }
 

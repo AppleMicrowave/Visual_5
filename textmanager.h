@@ -10,15 +10,22 @@
 class TextManager {
 public:
     // Метод для поиска текста в QTextEdit
-    static void search(const QString& searchText, QTextEdit* textEdit);
+    static void search(QTextEdit* textEdit, const QString& searchText);
 
     // Метод замены
-    static void replace(const QString& findText, const QString& replaceText, QTextEdit* textEdit);
+    static void replace(QTextEdit* textEdit,const QString& findText, const QString& replaceText);
 
     // Метод очистки
     static void clear(QTextEdit* textEdit);
 
     // Метод возврата
+
+
+    // Метод копирования
+    static QString copy(QTextEdit* textEdit);
+
+    // Метод вставки
+    static void paste(QTextEdit* textEdit, const QString& textToPaste);
 
 
 };
