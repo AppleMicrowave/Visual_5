@@ -20,6 +20,16 @@ public:
 private slots:
     void on_actionSearch_triggered();
 
+    void on_actionReplace_triggered();
+
+    void on_actionClear_triggered();
+
+    void on_actionCopy_triggered();
+
+    void on_actionPaste_triggered();
+
+    void on_actionDecorate_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

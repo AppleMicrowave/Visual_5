@@ -362,9 +362,9 @@ C:/Users/cooln/lab5/Visual_5/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/cooln/lab5/Visual_5/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Text_editor_autogen/moc_predefs.h
  mdp:C:/Users/cooln/lab5/Visual_5/mainwindow.h
+C:/Users/cooln/lab5/Visual_5/main.cpp
 C:/Users/cooln/lab5/Visual_5/mainwindow.cpp
  uic:./ui_mainwindow.h
-C:/Users/cooln/lab5/Visual_5/main.cpp
 C:/Users/cooln/lab5/Visual_5/textmanager.h
 C:/Users/cooln/lab5/Visual_5/textmanager.cpp
  uic:./ui_mainwindow.h
