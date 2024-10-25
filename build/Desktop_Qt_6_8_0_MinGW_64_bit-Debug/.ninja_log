@@ -1,0 +1,10 @@
+# ninja log v6
+33	176	7515425006565513	Text_editor_autogen/timestamp	8a4918a693ac1e03
+1792	1948	7515425024151506	Text_editor.exe	993401068c1ccd7a
+33	176	7515425006565513	Text_editor_autogen/mocs_compilation.cpp	8a4918a693ac1e03
+176	1618	7515425008002688	CMakeFiles/Text_editor.dir/mainwindow.cpp.obj	c67a3c7b1c0d315c
+33	176	7515425006565513	C:/Users/cooln/lab5/Visual_5/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Text_editor_autogen/timestamp	8a4918a693ac1e03
+33	176	7515425006565513	C:/Users/cooln/lab5/Visual_5/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Text_editor_autogen/mocs_compilation.cpp	8a4918a693ac1e03
+486	1835	7515420785715412	CMakeFiles/Text_editor.dir/Text_editor_autogen/mocs_compilation.cpp.obj	cf007888aa5e939a
+489	1836	7515420785744674	CMakeFiles/Text_editor.dir/main.cpp.obj	3f6c09933d7eb244
+180	1791	7515425008044417	CMakeFiles/Text_editor.dir/textmanager.cpp.obj	273406ac465ffb91
