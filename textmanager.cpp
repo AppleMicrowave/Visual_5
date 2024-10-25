@@ -2,7 +2,8 @@
 #include <QString>
 #include <QMessageBox>
 #include <QFile>
-
+#include <QFontDialog>
+#include <QColorDialog>
 #include "textmanager.h"
 #include "./ui_mainwindow.h"
 
@@ -73,4 +74,26 @@ void TextManager::paste(QTextEdit* textEdit, const QString& textToPaste){
 }
 
 
+void TextManager::decorate(QTextEdit* textEdit){
+    // Получаем текущий текстовый редактор
 
+    // Получаем текущий шрифт выделенного текста
+    QFont currentFont = textEdit->currentFont();
+
+    // Вызываем диалог выбора шрифта
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok, currentFont);
+    if (ok) {
+        // Если пользователь нажал "ОК", вызываем диалог выбора цвета
+        QColor currentColor = textEdit->textColor();
+        QColor color = QColorDialog::getColor(currentColor);
+        if (color.isValid()) {
+            // Если пользователь выбрал цвет, применяем выбранный шрифт и цвет к выделенному тексту
+            QTextCursor cursor = textEdit->textCursor();
+            QTextCharFormat format = cursor.charFormat();
+            format.setFont(font);
+            format.setForeground(color);
+            cursor.mergeCharFormat(format);
+        }
+    }
+}

@@ -57,3 +57,9 @@ void MainWindow::on_actionPaste_triggered()
     TextManager::paste(ui->textEdit, copyText);
 }
 
+
+void MainWindow::on_actionDecorate_triggered()
+{
+    TextManager::decorate(ui->textEdit);
+}
+

@@ -27,6 +27,9 @@ public:
     // Метод вставки
     static void paste(QTextEdit* textEdit, const QString& textToPaste);
 
+    // Метод
+    static void decorate(QTextEdit* textEdit);
+
 
 };
 
